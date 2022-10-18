@@ -22,6 +22,11 @@ module tb_snes_rom_reader();
     end
 
     always begin
+        data <= $random;
+        #20;
+    end
+
+    always begin
         #5;
         clk <= ~clk;
         #5;
